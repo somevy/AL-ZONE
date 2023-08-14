@@ -108,6 +108,12 @@ canvas {
   left: 35px;
 }
 
+.text-memory-game {
+  color: #fff;
+  font-family: "League Spartan", Arial, Helvetica, sans-serif;
+  font-size: 35px;
+}
+
 .start {
   background: url(images/Start.png); 
   position: absolute; 
@@ -151,4 +157,8 @@ canvas {
 .math-input {
   font-family: "League Spartan", Arial, Helvetica, sans-serif;
   font-size: 40px;
+  color: #3C5A6B;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
 }
