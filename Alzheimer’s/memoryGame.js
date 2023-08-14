@@ -5,13 +5,16 @@ let restartB,nextB,backB;
 function setup() {
   createCanvas(1263,617);
   brick.getloc()
-  backB = createButton("back/home")
+  backB = createA("menumemory.html", "Back/Home") //made it into a link back to homepage
+  backB.class("memory-option-buttons") //added class :)
   backB.position(backB.center('horizontal'),(height/2) + 70)
   backB.hide()
-  restartB = createButton("restart")
+  restartB = createButton("Restart")
+  restartB.class("memory-option-buttons")
   restartB.center()
   restartB.hide()
-  nextB = createButton("next level")
+  nextB = createButton("Next Level")
+  nextB.class("memory-option-buttons")
   nextB.center()
   nextB.hide()
 }
@@ -40,7 +43,7 @@ function draw() {
   }
 }
 function hideall(){
-  background(0);
+  background(72);
   backB.hide()
   restartB.hide()
   nextB.hide()

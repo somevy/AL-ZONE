@@ -39,6 +39,7 @@ class Bricks {
         //this.buttonText = i+1
         this.buttons[i] = createButton(i+1//this.buttonText
         ); 
+        this.buttons[i].class('memory-bricks'); //added class to bricks
         this.buttons[i].style('label','bvh');
         this.buttons[i].position(this.pos[i][0],this.pos[i][1])
         this.buttons[i].size(width / this.level - 10, height / this.level - 10)
