@@ -7,13 +7,6 @@ canvas {
   display: block;
 }
 
-.menu-grid {
-  margin-top: 5%;
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  text-align: center;
-}
-
 .game-header {
   position: absolute;
   font-size: 30px;
@@ -49,6 +42,7 @@ canvas {
 
 .settings:hover {
   opacity: 0.5;
+  transition: 0.1s ease-in-out;
 }
 
 .preview {
@@ -57,7 +51,7 @@ canvas {
   top: 160px;
   width: 760px;
   height: 60%;
-  background: white; 
+  background: rgb(0, 0, 0); 
   border-radius: 86px; 
   border-width: 10px;
   border-style: solid;
@@ -66,14 +60,18 @@ canvas {
 
 .play-button {
   position: absolute;
-  top: 46%;
-  left: 47%;
+  margin: 285px 595px;
   border: none;
   background: #000000e3;
   border-radius: 100%;
   height: 100px;
   width: 100px;
   cursor: pointer;
+}
+
+.play-button:hover {
+  opacity: 0.9;
+  transition: 0.1s ease-in-out;
 }
 
 .triangle{
@@ -103,9 +101,54 @@ canvas {
 .text {
   position: absolute;
   color: #3C5A6B;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "League Spartan", Arial, Helvetica, sans-serif;
   font-size: 35px;
   width: 930px;
   height: 400px;
   left: 35px;
+}
+
+.start {
+  background: url(images/Start.png); 
+  position: absolute; 
+  width: 413px; 
+  height: 124px; 
+  margin: 380px 420px;
+  cursor: pointer;
+}
+
+.start:hover {
+  opacity: 0.9;
+  transition: 0.1s ease-in-out;
+}
+
+.memory-option-buttons {
+  background: #3C5A6B;
+  color: white;
+  border: none;
+  font-family: "League Spartan", Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  padding: 20px 50px;
+  border-radius: 10px;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.432); 
+  cursor: pointer;
+}
+
+.memory-option-buttons:hover {
+  opacity: 0.8;
+  transition: 0.1s ease-in-out;
+}
+
+.memory-bricks {
+  color: #3C5A6B;
+  font-family: "League Spartan", Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.math-input {
+  font-family: "League Spartan", Arial, Helvetica, sans-serif;
+  font-size: 40px;
 }
