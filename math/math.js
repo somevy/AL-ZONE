@@ -18,6 +18,7 @@ let incorrect = 0;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  textFont('League Spartan');
 }
 
 function draw() {
@@ -84,7 +85,11 @@ check = 0;
 
 textSize(45);
 fill('white');
+push();
+textStyle(BOLD);
 text("Math Game", windowWidth*0.05, windowHeight*0.15)
+pop();
+
   
     //inp.position(windowWidth*999, windowWidth*999);
 
@@ -151,8 +156,8 @@ textSize(40);
 
   //fill('white')
   textSize(20)
-  text('score: ' + score, windowWidth*0.75, windowHeight/10)
-  text('incorrect: ' + incorrect, windowWidth*0.75, windowHeight/10+20)
+  text('Score: ' + score, windowWidth*0.75, windowHeight/10)
+  text('Incorrect: ' + incorrect, windowWidth*0.75, windowHeight/10+20)
 }
 
 
@@ -249,6 +254,7 @@ if(mathstate == 0){
   let inp = createInput('');
   inp.position(windowWidth/20+30, windowHeight*0.7);
   inp.size(windowWidth*0.8-40);
+  inp.class("math-input");
   //if(check == 1){
   inp.input(myInputEvent);
  // }
@@ -305,6 +311,7 @@ if(mathstate == 0){
   
   if(answerstate == 0){
   let inp = createInput('');
+  inp.class("math-input");
   inp.position(windowWidth/20+30, windowHeight*0.7);
   inp.size(windowWidth*0.8-40);
   //if(check == 1){
