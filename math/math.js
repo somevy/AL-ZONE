@@ -47,39 +47,39 @@ button2sig = 0;
 check = 0;
 
   fill(170, 187, 163)
-  rect(windowWidth*0.05, windowHeight*0.6, windowWidth*0.9, windowHeight*0.4,10)
+  rect(windowWidth*0.05, windowHeight*0.6, windowWidth*0.9, windowHeight*0.4, 10)
 
   fill(88, 154, 123)
- rect(windowWidth*0.85, windowHeight*0.7-10, 40);
-  if(mouseX > windowWidth*0.85 && mouseX < windowWidth*0.85+20 + 25 && mouseY > windowHeight*0.7-10 && mouseY < windowHeight*0.7-10 + 25){
+ rect(windowWidth*0.85, windowHeight*0.71889-10, 40, 40, 10);
+  if(mouseX > windowWidth*0.85 && mouseX < windowWidth*0.85+20 + 25 && mouseY > windowHeight*0.71889-10 && mouseY < windowHeight*0.71889-10 + 25){
     fill(88, 130, 69)
-    rect(windowWidth*0.85, windowHeight*0.7-10, 40); 
+    rect(windowWidth*0.85, windowHeight*0.71889-10, 40, 40, 10); 
   }
   
   button(windowWidth/20, windowHeight*0.2, windowWidth*0.9, 50,1,10);
 
   strokeWeight(0);
   fill(88, 154, 123)
-  rect(windowWidth/20, windowHeight*0.3, windowWidth*0.9, 50);
+  rect(windowWidth/20, windowHeight*0.3, windowWidth*0.9, 50, 10);
   if(mouseX > windowWidth/20 && mouseX < windowWidth/20 + windowWidth*0.9 && mouseY > windowHeight*0.3 && mouseY < windowHeight*0.3 + 50){
     fill(88, 130, 69)
-    rect(windowWidth/20, windowHeight*0.3, windowWidth*0.9, 50); 
+    rect(windowWidth/20, windowHeight*0.3, windowWidth*0.9, 50, 10); 
     button3 = 1;
 
   }
    fill(88, 154, 123)
-  rect(windowWidth/20, windowHeight*0.4, windowWidth*0.9, 50);
+  rect(windowWidth/20, windowHeight*0.4, windowWidth*0.9, 50, 10);
   if(mouseX > windowWidth/20 && mouseX < windowWidth/20 + windowWidth*0.9 && mouseY > windowHeight*0.4 && mouseY < windowHeight*0.4 + 50){
     fill(88, 130, 69)
-    rect(windowWidth/20, windowHeight*0.4, windowWidth*0.9, 50); 
+    rect(windowWidth/20, windowHeight*0.4, windowWidth*0.9, 50, 10); 
     button4 = 1;
   }
 
   fill(88, 154, 123)
-  rect(windowWidth/20, windowHeight*0.5, windowWidth*0.9, 50);
+  rect(windowWidth/20, windowHeight*0.5, windowWidth*0.9, 50, 10);
   if(mouseX > windowWidth/20 && mouseX < windowWidth/20 + windowWidth*0.9 && mouseY > windowHeight*0.5 && mouseY < windowHeight*0.5 + 50){
     fill(88, 130, 69)
-    rect(windowWidth/20, windowHeight*0.5, windowWidth*0.9, 50); 
+    rect(windowWidth/20, windowHeight*0.5, windowWidth*0.9, 50, 10); 
     button5 = 1;
   }
 
@@ -104,7 +104,7 @@ pop();
   text('With single to double digit multiplication', windowWidth/18, windowHeight*0.55);
 textSize(30);
   fill('white')
-  text('↑', windowWidth*0.85+10, windowHeight*0.7+20)
+  text('↑', windowWidth*0.85+10, windowHeight*0.7189+20)
 
 } 
 
@@ -147,7 +147,7 @@ if(gamestate == 1){
   if(gamestate != 0){
     textSize(30);
   fill('white')
-  text('↑', windowWidth*0.85+10, windowHeight*0.7+20)
+  text('↑', windowWidth*0.85+10, windowHeight*0.718889+20)
     backbutton();
     fill('white')
 textSize(40);
@@ -165,10 +165,10 @@ textSize(40);
 function backbutton(){
   strokeWeight(0);
   fill(88, 154, 123)
-  rect(windowWidth/20, windowHeight*0.8, windowWidth*0.9, windowHeight*0.2);
+  rect(windowWidth/20, windowHeight*0.8, windowWidth*0.9, windowHeight*0.2, 10);
   if(mouseX > windowWidth/20 && mouseX < windowWidth/20 + windowWidth*0.9 && mouseY > windowHeight*0.8 && mouseY < windowHeight*0.8 + windowHeight*0.2){
     fill(88, 130, 69)
-    rect(windowWidth/20, windowHeight*0.8, windowWidth*0.9, windowHeight*0.2); 
+    rect(windowWidth/20, windowHeight*0.8, windowWidth*0.9, windowHeight*0.2, 10); 
 
     backbutton1 = 1;
 }
@@ -179,10 +179,10 @@ function backbutton(){
 function button(Lox,Loy,Buh,Buy,Bumax, ) {
   strokeWeight(0);
   fill(88, 154, 123)
-  rect(Lox, Loy, Buh, Buy);
+  rect(Lox, Loy, Buh, Buy, 10);
   if(mouseX > Lox && mouseX < Lox + Buh && mouseY > Loy && mouseY < Loy + Buy){
     fill(88, 130, 69)
-    rect(Lox, Loy, Buh, Buy); 
+    rect(Lox, Loy, Buh, Buy, 10); 
     button1 = Bumax;
   }
 }
@@ -242,17 +242,17 @@ if(mathstate == 0){
   button2 = 1
   if(button2 == 1){
   fill(88, 154, 123)
-  rect(windowWidth*0.85, windowHeight*0.7-10, 40);
-  if(mouseX > windowWidth*0.85 && mouseX < windowWidth*0.85+20 + 25 && mouseY > windowHeight*0.7-10 && mouseY < windowHeight*0.7-10 + 25){
+  rect(windowWidth*0.85, windowHeight*0.71889-10, 40, 40, 10);
+  if(mouseX > windowWidth*0.85 && mouseX < windowWidth*0.85+20 + 25 && mouseY > windowHeight*0.71889-10 && mouseY < windowHeight*0.71889-10 + 25){
     fill(88, 130, 69)
-    rect(windowWidth*0.85, windowHeight*0.7-10, 40); 
+    rect(windowWidth*0.85, windowHeight*0.71889-10, 40, 40, 10); 
     button2sig = 1
   }
   }
   
   if(answerstate == 0){
   let inp = createInput('');
-  inp.position(windowWidth/20+30, windowHeight*0.7);
+  inp.position(windowWidth/31+30, windowHeight*0.7);
   inp.size(windowWidth*0.8-40);
   inp.class("math-input");
   //if(check == 1){
@@ -301,10 +301,10 @@ if(mathstate == 0){
   button2 = 1
   if(button2 == 1){
   fill(88, 154, 123)
-  rect(windowWidth*0.85, windowHeight*0.7-10, 40);
-  if(mouseX > windowWidth*0.85 && mouseX < windowWidth*0.85+20 + 25 && mouseY > windowHeight*0.7-10 && mouseY < windowHeight*0.7-10 + 25){
+  rect(windowWidth*0.85, windowHeight*0.71889-10, 40, 40, 10);
+  if(mouseX > windowWidth*0.85 && mouseX < windowWidth*0.85+20 + 25 && mouseY > windowHeight*0.71889-10 && mouseY < windowHeight*0.71889-10 + 25){
     fill(88, 130, 69)
-    rect(windowWidth*0.85, windowHeight*0.7-10, 40); 
+    rect(windowWidth*0.85, windowHeight*0.71889-10, 40, 40, 10); 
     button2sig = 1
   }
   }
@@ -312,14 +312,14 @@ if(mathstate == 0){
   if(answerstate == 0){
   let inp = createInput('');
   inp.class("math-input");
-  inp.position(windowWidth/20+30, windowHeight*0.7);
+  inp.position(windowWidth/31+30, windowHeight*0.7);
   inp.size(windowWidth*0.8-40);
   //if(check == 1){
   inp.input(myInputEvent);
  // }
   answerstate = 1
   }
-  if(check == 1){
+  if(check == 1){qa
     if(answer == num1*num2){
       print('correct')
       score = score+1
