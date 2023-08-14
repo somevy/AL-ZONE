@@ -104,6 +104,13 @@ canvas {
   left: 35px;
 }
 
+.text-memory-game {
+  /*position: absolute;*/
+  color: #fff;
+  font-family: "League Spartan", Arial, Helvetica, sans-serif;
+  font-size: 35px;
+}
+
 .start {
   background: url(images/Start.png); 
   position: absolute; 
