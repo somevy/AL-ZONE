@@ -314,12 +314,10 @@ if(mathstate == 0){
   inp.class("math-input");
   inp.position(windowWidth/31+30, windowHeight*0.7);
   inp.size(windowWidth*0.8-40);
-  //if(check == 1){
   inp.input(myInputEvent);
- // }
   answerstate = 1
   }
-  if(check == 1){qa
+  if(check == 1){
     if(answer == num1*num2){
       print('correct')
       score = score+1
